@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#AFACAC"
+    android:background="#D3CFCF"
     tools:context=".fooddetailActivity">
 
     <ScrollView
@@ -24,11 +24,12 @@
 
             tools:ignore="MissingConstraints">
 
+
             <ImageView
                 android:id="@+id/imageView2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="16dp"
+                android:layout_marginStart="28dp"
                 android:layout_marginTop="16dp"
                 android:padding="2dp"
                 app:layout_constraintStart_toStartOf="parent"
@@ -40,15 +41,15 @@
                 android:id="@+id/textView10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="11dp"
                 android:padding="2dp"
                 android:text="1 Hours"
                 android:textColor="@color/black"
                 android:textSize="16sp"
                 app:layout_constraintBottom_toBottomOf="@+id/imageView4"
+                app:layout_constraintStart_toEndOf="@+id/imageView4"
                 app:layout_constraintTop_toTopOf="@+id/imageView4"
-                app:layout_constraintVertical_bias="1.0"
-                tools:layout_editor_absoluteX="60dp" />
-
+                app:layout_constraintVertical_bias="0.0" />
 
             <TextView
                 android:id="@+id/textView7"
@@ -70,7 +71,7 @@
                 android:id="@+id/textView6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="20dp"
+                android:layout_marginStart="30dp"
                 android:layout_marginTop="28dp"
                 android:padding="4dp"
                 android:text="Mashala Muglai"
@@ -84,25 +85,33 @@
                 android:id="@+id/imageView4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginStart="36dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8"
+                app:layout_constraintVertical_bias="0.509"
                 app:srcCompat="@drawable/time"
-                app:tint="@color/black"
-                tools:layout_editor_absoluteX="20dp"
-                tools:layout_editor_absoluteY="214dp" />
+                app:tint="@color/black" />
 
             <TextView
                 android:layout_width="250dp"
                 android:layout_height="250dp"
                 android:background="@drawable/vegitablebg"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="226dp"
-                tools:layout_editor_absoluteY="63dp" />
+                app:layout_constraintBottom_toBottomOf="parent"
+
+                android:layout_marginBottom="-50dp"
+                android:layout_marginEnd="-50dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView8"
                 android:layout_width="301dp"
                 android:layout_height="72dp"
-                android:layout_marginStart="20dp"
-                android:layout_marginTop="8dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="16dp"
                 android:maxWidth="290dp"
                 android:padding="3dp"
                 android:text="Mughlai Mashala is Style of cookery developed
@@ -118,7 +127,7 @@
             android:id="@+id/constraintLayout2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="2dp"
             android:paddingBottom="20dp"
             android:background="@color/white"
             app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
@@ -160,7 +169,7 @@
                 android:layout_marginStart="30dp"
                 android:layout_marginEnd="30dp"
                 android:layout_marginTop="12dp"
-                android:background="@color/gray"
+                android:background="#ECE9E9"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
@@ -288,14 +297,14 @@
                 android:id="@+id/textView26"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="28dp"
                 android:padding="2dp"
                 android:text="Coriander"
                 android:textColor="@color/gray"
                 android:textSize="18sp"
-                app:layout_constraintEnd_toEndOf="@+id/textView25"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@+id/textView25"
+                app:layout_constraintEnd_toStartOf="@+id/textView28"
+                app:layout_constraintHorizontal_bias="0.129"
+                app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/textView25"
                 tools:ignore="MissingConstraints" />
 
@@ -303,7 +312,7 @@
                 android:id="@+id/textView27"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:padding="2dp"
                 android:text="Mustard oil"
                 android:textColor="@color/gray"
@@ -318,21 +327,22 @@
                 android:id="@+id/textView28"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginEnd="16dp"
                 android:padding="2dp"
                 android:text="100 gram"
                 android:textColor="@color/gray"
                 android:textSize="18sp"
                 app:layout_constraintBottom_toBottomOf="@+id/textView26"
+                app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintTop_toTopOf="@+id/textView26"
                 app:layout_constraintVertical_bias="0.0"
-                tools:ignore="MissingConstraints"
-                tools:layout_editor_absoluteX="314dp" />
+                tools:ignore="MissingConstraints" />
 
             <TextView
                 android:id="@+id/textView29"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="10dp"
+                android:layout_marginTop="20dp"
                 android:padding="2dp"
                 android:text="1/2 litres"
                 android:textColor="@color/gray"
@@ -360,7 +370,8 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="50dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
                 android:layout_marginTop="30dp"
                 android:layout_marginBottom="50dp"
                 android:gravity="left"
@@ -382,11 +393,12 @@
                         android:layout_height="150dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:background="@drawable/fridge"
-                        android:orientation="vertical">
+                        android:background="@drawable/frige"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
                         <ImageView
-                            android:id="@+id/imageView5"
+                            android:id="@+id/imageView8"
                             android:layout_width="100dp"
                             android:layout_height="120dp"
                             android:layout_gravity="center"
@@ -394,10 +406,9 @@
                             app:srcCompat="@drawable/fridge" />
 
                         <TextView
-                            android:id="@+id/textView33"
-                            android:layout_width="wrap_content"
+                            android:id="@+id/textView3"
+                            android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginStart="10dp"
                             android:gravity="center"
                             android:text="Refrigenetors"
                             android:textColor="@color/black"
@@ -409,8 +420,9 @@
                         android:layout_height="150dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:background="@drawable/fridge"
-                        android:orientation="vertical">
+                        android:background="@drawable/frige"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
                         <ImageView
                             android:id="@+id/imageView6"
@@ -435,8 +447,9 @@
                         android:layout_height="150dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
-                        android:background="@drawable/fridge"
-                        android:orientation="vertical">
+                        android:background="@drawable/frige"
+                        android:orientation="vertical"
+                        android:padding="6dp">
 
                         <ImageView
                             android:id="@+id/imageView7"

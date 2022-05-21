@@ -11,6 +11,7 @@
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/down.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/firststatus.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/frige.xml" value="0.2555" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/menubutton.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/next.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/plus.xml" value="0.2555" />
@@ -23,7 +24,7 @@
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/time.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/vegitablebg.xml" value="0.2555" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/drawable/viewlistnext.xml" value="0.2555" />
-        <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/layout/activity_fooddetail.xml" value="0.152" />
+        <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/layout/activity_fooddetail.xml" value="0.2" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/layout/activity_main.xml" value="0.2" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/layout/sample.xml" value="0.264" />
         <entry key="..\:/Users/guddu/AndroidStudioProjects/FoodOrder2/app/src/main/res/layout/sapmle1.xml" value="0.264" />

@@ -1,9 +1,11 @@
 package com.example.foodorder;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -17,7 +19,6 @@ public class Madapter extends RecyclerView.Adapter<Madapter.viewholder> {
 
     ArrayList<module>list;
     Context context;
-
     public Madapter(ArrayList<module> list, Context context) {
         this.list = list;
         this.context = context;
@@ -34,9 +35,17 @@ public class Madapter extends RecyclerView.Adapter<Madapter.viewholder> {
     public void onBindViewHolder(@NonNull viewholder holder, int position) {
         module module = list.get(position);
 //
-        holder.foodname.setText((CharSequence) module.getFoodname());
-        holder.decrpt.setText((CharSequence) module.getDecrpt());
+        holder.foodname.setText( module.getFoodname());
+        holder.decrpt.setText( module.getDecrpt());
         holder.foodimage.setImageResource(module.getFoodimage());
+
+        holder.viewlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                        view.getContext().startActivity(new Intent(context,fooddetailActivity.class));
+            }
+        });
 
     }
 
@@ -45,10 +54,11 @@ public class Madapter extends RecyclerView.Adapter<Madapter.viewholder> {
         return list.size();
     }
 
+
     public class viewholder extends RecyclerView.ViewHolder
     {
 
-        TextView foodname,decrpt;
+        TextView foodname,decrpt,viewlist;
         ImageView foodimage;
         public viewholder(@NonNull View itemView) {
             super(itemView);
@@ -56,7 +66,7 @@ public class Madapter extends RecyclerView.Adapter<Madapter.viewholder> {
             foodname = itemView.findViewById(R.id.foodname);
             decrpt = itemView.findViewById(R.id.decript);
             foodimage = itemView.findViewById(R.id.foorimage);
-
+            viewlist = itemView.findViewById(R.id.viewlistsample);
 
 
         }

@@ -5,16 +5,16 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class module {
-
-
-    String foodname,decrpt;
-    int foodimage;
-
     public module(String foodname, String decrpt, int foodimage) {
         this.foodname = foodname;
         this.decrpt = decrpt;
         this.foodimage = foodimage;
     }
+
+    String foodname, decrpt, viewlist;
+    int foodimage;
+
+
 
 
     public String getFoodname() {
@@ -31,6 +31,14 @@ public class module {
 
     public void setDecrpt(String decrpt) {
         this.decrpt = decrpt;
+    }
+
+    public String getViewlist() {
+        return viewlist;
+    }
+
+    public void setViewlist(String viewlist) {
+        this.viewlist = viewlist;
     }
 
     public int getFoodimage() {

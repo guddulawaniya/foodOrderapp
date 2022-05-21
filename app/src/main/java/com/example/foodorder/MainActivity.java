@@ -4,8 +4,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.annotation.SuppressLint;
-import android.content.ClipData;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -18,7 +16,6 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
-    TextView viewlist =  findViewById(R.id.viewlistsample);
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,17 +23,9 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        viewlist.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity.this,fooddetailActivity.class);
-                startActivity(intent);
-            }
-        });
 
 
         ArrayList<module> list = new ArrayList<>();
-        Context context;
         RecyclerView recyclerView = findViewById(R.id.recyclerView);
 
         list.add(new module("Masala", "this is good masala", R.drawable.image));
