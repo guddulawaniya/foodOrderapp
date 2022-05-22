@@ -25,7 +25,6 @@ import java.util.Locale;
 public class MainActivity extends AppCompatActivity {
     ActivityMainBinding binding;
     final Calendar myCalendar= Calendar.getInstance();
-    String am_pm;
 
 
     @Override
@@ -34,6 +33,18 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
+        binding.endtimeset.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timepicker();
+            }
+        });
+        binding.startsettime.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                timepicker();
+            }
+        });
 
 
         ArrayList<module> list = new ArrayList<>();
@@ -83,6 +94,7 @@ public class MainActivity extends AppCompatActivity {
 
 
     }
+
 
     private void updateLabel() {
         String myFormat="dd/mm/yy";

@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@color/white"
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity">
@@ -41,11 +42,17 @@
         </LinearLayout>
 
 
-        <LinearLayout
+    <View
+        android:id="@+id/view8"
+        android:layout_width="match_parent"
+        android:background="#333232"
+        android:layout_height="50dp" />
+
+    <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="20dp"
+        android:layout_marginTop="-25dp"
             android:layout_marginEnd="20dp"
 
             android:background="@drawable/corner"
@@ -123,6 +130,7 @@
                 android:textStyle="bold" />
 
         </LinearLayout>
+
 
 
     <LinearLayout
@@ -575,14 +583,13 @@
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/black"
             android:orientation="vertical">
 
             <androidx.recyclerview.widget.RecyclerView
                 android:id="@+id/recyclerView"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@color/white"
+                android:layout_marginBottom="30dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
 
