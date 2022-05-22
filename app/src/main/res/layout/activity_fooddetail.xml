@@ -26,7 +26,7 @@
 
 
             <ImageView
-                android:id="@+id/imageView2"
+                android:id="@+id/backdetailactivity"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="28dp"
@@ -79,7 +79,7 @@
                 android:textSize="24dp"
                 android:textStyle="bold"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+                app:layout_constraintTop_toBottomOf="@+id/backdetailactivity" />
 
             <ImageView
                 android:id="@+id/imageView4"
@@ -389,8 +389,8 @@
                     android:orientation="horizontal">
 
                     <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
+                        android:layout_width="105dp"
+                        android:layout_height="160dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/frige"
@@ -409,6 +409,7 @@
                             android:id="@+id/textView3"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
                             android:gravity="center"
                             android:text="Refrigenetors"
                             android:textColor="@color/black"
@@ -416,8 +417,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
+                        android:layout_width="105dp"
+                        android:layout_height="160dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/frige"
@@ -436,6 +437,7 @@
                             android:id="@+id/textView31"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
                             android:gravity="center"
                             android:text="Refrigenetors"
                             android:textColor="@color/black"
@@ -443,8 +445,8 @@
                     </LinearLayout>
 
                     <LinearLayout
-                        android:layout_width="100dp"
-                        android:layout_height="150dp"
+                        android:layout_width="105dp"
+                        android:layout_height="160dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginEnd="10dp"
                         android:background="@drawable/frige"
@@ -463,6 +465,7 @@
                             android:id="@+id/textView32"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
                             android:gravity="center"
                             android:text="Refrigenetors"
                             android:textColor="@color/black"
